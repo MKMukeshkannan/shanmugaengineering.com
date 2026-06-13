@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 17s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50%));
+  }
+}
